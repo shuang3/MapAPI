@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+    <title>Map API</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+	<link rel="stylesheet" href="css/new.css">
+  </head>
+
+  <body>
+
+    <!-- Page Content -->
+    <div class="container">
+      <div class="row">
+        <div class="text-center">
+
+          <h1>MAP API: Calculate your route</h1>
+		  
+	<nav class="navbar navbar-default">
+    <div class="searchpage text-center">
+        <div class="navbar-form navbar-left fullNav">
+		<div class="form-group fullNav">
+			  <label for="to">Initial:</label>
+				<input id="input-start" class="form-control" type="text" placeholder="Initial address" size="50" />
+				<br>
+			  <label for="to">Destination:</label>
+				<input id="input-dest" class="form-control" type="text" placeholder="Destination address" size="50" />
+		</div>
+        </div>
+      </div>
+	  </nav>
+	  
+		<div id="map"></div>
+		<div id="panel" class="center-div"></div>
+		<br>
+		 <h1>Calculated prices are:</h1>
+    <!-- Fare Results -->
+		<img src="images/lyft.png" class="crop">
+		<img src="images/uber.jpg" class="crop">
+        <p id="lyft-result" class="fare-result"></p>
+        <p id="uber-result" class="fare-result"></p>
+				
+        <br>
+		<p id="result"></p><br>
+        <br>
+		
+		</div>
+		<!-- /end text-center -->
+	  </div>
+      <!-- /end row -->
+    </div>
+    <!-- /end container -->
+
+	<footer class="text-center" id="footer">
+		<p><br>Project &copy;2018 Shiyun Huang, Choekgi Kalsang<br></p>
+	</footer>
+
+    <!-- jQuery Version -->
+    <script src="https://code.jquery.com/jquery-3.1.1.js" crossorigin="anonymous"></script>
+
+	<!-- Google Maps API -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClSk8v6E1iRQDt_r88rBvTJySyeNjuieU&libraries=places"></script>
+
+	<!-- JavaScript -->
+	<script src="js/new.js"></script>
+  </body>
+
+</html>
